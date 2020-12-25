@@ -14,8 +14,9 @@ X, labels_true = make_blobs(n_samples=750, centers=centers, cluster_std=0.4,
 db = DBSCAN(eps=0.3, min_samples=10).fit(X)    #同比例增大密度相同
 core_samples_mask = np.zeros_like(db.labels_, dtype=bool)    #  np.zeros_like  生成向量 
 core_samples_mask[db.core_sample_indices_] = True     #一维向量，判断若是True就放到其中，存储核心点
-labels = db.labels_    #-1代表noise
+labels = db.labels_    
 
+#获取聚类个数，其中-1代表noise    
 # Number of clusters in labels, ignoring noise if present.
 n_clusters_ = len(set(labels)) - (1 if -1 in labels else 0)   #当前样本点归属哪一类   4-1=3，聚出来的类是3，减去一个噪声点
 #看判断出来的点有几个类别    set转换成集合                       
