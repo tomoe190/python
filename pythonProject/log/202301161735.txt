@@ -1,0 +1,15 @@
+[2023-01-16  17:35:07]-[line:93]-[open_browser0] - INFO: 打开浏览器：<selenium.webdriver.chrome.webdriver.WebDriver (session="fb60c45e88c247c759887e4024db0359")>
+[2023-01-16  17:35:07]-[line:96]-[open_browser0] - INFO: get_url: 192.168.1.1
+[2023-01-16  17:35:10]-[line:235]-[set_element_text] - INFO: 输入：admin
+[2023-01-16  17:35:12]-[line:235]-[set_element_text] - INFO: 输入：admin
+[2023-01-16  17:35:14]-[line:296]-[click_element_by] - INFO: 点击元素 //*[@id="loginBtn"]
+[2023-01-16  17:35:16]-[line:296]-[click_element_by] - INFO: 点击元素 //*[@id="nav"]/li[4]/a
+[2023-01-16  17:35:18]-[line:210]-[switch_to_frame] - INFO: 切换frame到：contentIframe
+[2023-01-16  17:35:18]-[line:296]-[click_element_by] - INFO: 点击元素 /html/body/form/div[1]/table/tbody/tr[1]/th/select/option[3]
+[2023-01-16  17:35:20]-[line:296]-[click_element_by] - INFO: 点击元素 /html/body/form/div[1]/table/tbody/tr[6]/td/select/option[3]
+[2023-01-16  17:35:23]-[line:296]-[click_element_by] - INFO: 点击元素 /html/body/form/div[8]/input[3]
+[2023-01-16  17:35:27]-[line:304]-[alert_prencence] - INFO: PPP user name cannot be empty!
+[2023-01-16  17:35:27]-[line:165]-[logout] - INFO: 切换至默认frame
+[2023-01-16  17:35:27]-[line:296]-[click_element_by] - INFO: 点击元素 //*[@id="header"]/div[1]/div/div/form/input[1]
+[2023-01-16  17:35:29]-[line:168]-[logout] - INFO: 退出登录
+[2023-01-16  17:35:31]-[line:155]-[close_browser] - INFO: 关闭浏览器

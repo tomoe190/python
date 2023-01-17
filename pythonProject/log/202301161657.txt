@@ -1,0 +1,14 @@
+[2023-01-16  16:58:00]-[line:93] open_browser0 - INFO: 打开浏览器：<selenium.webdriver.chrome.webdriver.WebDriver (session="6d318f588c96868b303d7d46e87fbfdb")>
+[2023-01-16  16:58:00]-[line:96] open_browser0 - INFO: get_url: 192.168.1.1
+[2023-01-16  16:58:02]-[line:233] set_element_text - INFO: 输入：admin
+[2023-01-16  16:58:04]-[line:233] set_element_text - INFO: 输入：admin
+[2023-01-16  16:58:06]-[line:294] click_element_by - INFO: 点击元素 //*[@id="loginBtn"]
+[2023-01-16  16:58:09]-[line:294] click_element_by - INFO: 点击元素 //*[@id="nav"]/li[4]/a
+[2023-01-16  16:58:11]-[line:208] switch_to_frame - INFO: 切换frame到：contentIframe
+[2023-01-16  16:58:11]-[line:294] click_element_by - INFO: 点击元素 /html/body/form/div[1]/table/tbody/tr[1]/th/select/option[3]
+[2023-01-16  16:58:13]-[line:294] click_element_by - INFO: 点击元素 /html/body/form/div[1]/table/tbody/tr[6]/td/select/option[3]
+[2023-01-16  16:58:15]-[line:294] click_element_by - INFO: 点击元素 /html/body/form/div[8]/input[3]
+[2023-01-16  16:58:17]-[line:302] Alert_prencence - INFO: PPP user name cannot be empty!
+[2023-01-16  16:58:24]-[line:79] wrapper - ERROR: timeout
+[2023-01-16  16:58:24]-[line:320] __str__ - ERROR: 
+找不到元素: //*[@id="header"]/div[1]/div/div/form/input[1]
