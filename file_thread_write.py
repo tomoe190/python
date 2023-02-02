@@ -48,13 +48,13 @@ class DataSource(object):
             f.write(line)
         self.lock.release()
 
-    def process(self):
+    def process(self, t_id):
         count = 0
         start_time = time.time()
         while True:
             status, line = self.read_file()
             if status:
-                log.info(f'线程处理数据:' + '\n' + f'{line}')
+                log.info(f'线程{t_id}处理数据:' + '\n' + f'{line}')
                 self.write_file(line)
                 count += 1
             else:
@@ -63,20 +63,20 @@ class DataSource(object):
 
 if __name__ == "__main__":
     datasource = DataSource('read_data.txt')
-    # t_num = 5
-    # workers = []
-    # start_time = time.time()
-    # for i in range(t_num):
-    #     worker = threading.Thread(target=datasource.process, args=(i,))
-    #     worker.start()
-    #     workers.append(worker)
-    datasource.process()
-    # for worker in workers:
-    #     worker.join()
-    # log.info("总程序执行完毕。")
-    # end_time = time.time()
-    # res_time = end_time - start_time
-    # log.info(res_time)
+    t_num = 5
+    workers = []
+    start_time = time.time()
+    for i in range(t_num):
+        worker = threading.Thread(target=datasource.process, args=(i,))
+        worker.start()
+        workers.append(worker)
+    # datasource.process()
+    for worker in workers:
+        worker.join()
+    log.info("总程序执行完毕。")
+    end_time = time.time()
+    res_time = end_time - start_time
+    log.info(res_time)
 
 
 
